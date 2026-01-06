@@ -83,3 +83,30 @@ alembic/versions/*.pyc
 # Docker
 # =====================
 *.pid
+
+
+# frontend
+# =====================
+# TanStack Start
+# =====================
+frontend/web/.tanstack/
+frontend/web/.vinxi/
+frontend/web/.output/
+frontend/web/.cache/
+
+# =====================
+# Node / Frontend
+# =====================
+node_modules/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =====================
+# Env
+# =====================
+.env
+.env.local
+.env.development
+.env.production
