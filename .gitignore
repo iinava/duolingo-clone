@@ -1,0 +1,85 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# =====================
+# Virtual Environments
+# =====================
+.env
+.venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# =====================
+# Environment variables
+# =====================
+.env.local
+.env.dev
+.env.prod
+.env.test
+
+# =====================
+# FastAPI / Uvicorn
+# =====================
+*.log
+uvicorn.log
+
+# =====================
+# Databases
+# =====================
+*.sqlite3
+*.db
+
+# =====================
+# Caches & Tests
+# =====================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# =====================
+# Cursor / VS Code
+# =====================
+.vscode/
+.cursor/
+
+# =====================
+# OS
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Jupyter
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# Poetry
+# =====================
+poetry.lock
+
+# =====================
+# Alembic
+# =====================
+alembic/versions/*.pyc
+
+# =====================
+# Docker
+# =====================
+*.pid
