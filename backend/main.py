@@ -1,6 +1,7 @@
+from api.routes.auth_router import router as auth_router
+from core.settings import settings
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from core.settings import settings
 
 app = FastAPI(
     title="Duolingo Clone API",
@@ -17,8 +18,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Include routers
+app.include_router(auth_router)
+
 
 @app.get("/")
 async def root():
     return {"message": "Welcome to Duolingo Clone API"}
-
